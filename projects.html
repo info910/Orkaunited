@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="معرض أعمال شركة اوركا المتحدة - مشاريع سكنية، تجارية، تصميم داخلي، وتخطيط عمراني" />
+  <title>أعمالنا | ORKA United اوركا المتحدة</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.svg" alt="ORKA United" />
+          <span class="nav-logo-text">
+            <span class="name" data-i18n="brand.name">اوركا المتحدة</span>
+            <span class="sub" data-i18n="brand.sub">ORKA UNITED</span>
+          </span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">الخدمات</a></li>
+          <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">الأعمال</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn lang-toggle" aria-label="Toggle language">EN</button>
+          <button class="icon-btn theme-toggle" aria-label="Toggle theme">
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36-6.36l-.7.7M6.34 17.66l-.7.7m12.02 0l-.7-.7M6.34 6.34l-.7-.7M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+          </button>
+          <a href="contact.html" class="btn btn-primary nav-cta-btn" data-i18n="nav.cta">احصل على عرض سعر</a>
+          <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <h1 data-i18n="pageHero.projects.title">أعمالنا</h1>
+      <p style="max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem;" data-i18n="pageHero.projects.desc">استعرض مجموعة من أبرز مشاريعنا المنجزة</p>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <span>/</span>
+        <span data-i18n="nav.projects">الأعمال</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">الكل</button>
+        <button class="filter-btn" data-filter="residential" data-i18n="projects.filter.residential">سكني</button>
+        <button class="filter-btn" data-filter="commercial" data-i18n="projects.filter.commercial">تجاري</button>
+        <button class="filter-btn" data-filter="interior" data-i18n="projects.filter.interior">تصميم داخلي</button>
+        <button class="filter-btn" data-filter="urban" data-i18n="projects.filter.urban">تخطيط عمراني</button>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="project-card reveal" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.residential">سكني</div>
+            <h3 class="project-title" data-i18n="project1.title">فيلا المروج</h3>
+            <p class="project-meta" data-i18n="project1.meta">الرياض · 2025</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.commercial">تجاري</div>
+            <h3 class="project-title" data-i18n="project2.title">برج المركز التجاري</h3>
+            <p class="project-meta" data-i18n="project2.meta">جدة · 2024</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.residential">سكني</div>
+            <h3 class="project-title" data-i18n="project3.title">قصر الأمير</h3>
+            <p class="project-meta" data-i18n="project3.meta">الدمام · 2025</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.interior">تصميم داخلي</div>
+            <h3 class="project-title" data-i18n="project4.title">مقر شركة النخبة</h3>
+            <p class="project-meta" data-i18n="project4.meta">الرياض · 2024</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.commercial">تجاري</div>
+            <h3 class="project-title" data-i18n="project5.title">مجمع الأعمال</h3>
+            <p class="project-meta" data-i18n="project5.meta">الرياض · 2023</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.residential">سكني</div>
+            <h3 class="project-title" data-i18n="project6.title">مجمع الواحة السكني</h3>
+            <p class="project-meta" data-i18n="project6.meta">المدينة · 2025</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="urban">
+          <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.urban">تخطيط عمراني</div>
+            <h3 class="project-title" data-i18n="project7.title">مخطط الحي السكني</h3>
+            <p class="project-meta" data-i18n="project7.meta">الرياض · 2024</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.interior">تصميم داخلي</div>
+            <h3 class="project-title" data-i18n="project8.title">تصميم مطعم فاخر</h3>
+            <p class="project-meta" data-i18n="project8.meta">جدة · 2025</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ORKA Project" />
+          <div class="project-overlay">
+            <div class="project-category" data-i18n="projects.cat.commercial">تجاري</div>
+            <h3 class="project-title" data-i18n="project9.title">مجمع التسوق</h3>
+            <p class="project-meta" data-i18n="project9.meta">مكة · 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="cta-banner reveal">
+      <div class="cta-content">
+        <h2 data-i18n="cta.title">هل لديك مشروع تود تنفيذه؟</h2>
+        <p data-i18n="cta.subtitle">تواصل معنا اليوم لنبدأ سوياً رحلة تحويل أفكارك إلى واقع ملموس</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary" data-i18n="cta.btn1">احصل على استشارة مجانية</a>
+          <a href="https://wa.me/966570524353" target="_blank" class="btn btn-whatsapp" data-i18n="cta.btn2">راسلنا على واتساب</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="images/logo.svg" alt="ORKA United" />
+            <span class="nav-logo-text">
+              <span class="name" data-i18n="brand.name">اوركا المتحدة</span>
+              <span class="sub" data-i18n="brand.sub">ORKA UNITED</span>
+            </span>
+          </a>
+          <p class="footer-about" data-i18n="footer.about">اوركا المتحدة - صرح هندسي متكامل يجمع بين التخطيط والتصميم والتنفيذ بأعلى معايير الجودة.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 01-1.38-.9 3.72 3.72 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.18 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.18 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 00-2.13 1.38A5.88 5.88 0 00.63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 001.38 2.13 5.88 5.88 0 002.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 002.13-1.38 5.88 5.88 0 001.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 00-1.38-2.13A5.88 5.88 0 0019.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zM12 16a4 4 0 114-4 4 4 0 01-4 4zm6.41-11.85a1.44 1.44 0 11-1.44 1.44 1.44 1.44 0 011.44-1.44z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="https://wa.me/966570524353" target="_blank" class="social-link" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title" data-i18n="footer.quickLinks">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+            <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+            <li><a href="services.html" data-i18n="nav.services">الخدمات</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">الأعمال</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title" data-i18n="footer.services">خدماتنا</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" data-i18n="service1.title">التصميم المعماري</a></li>
+            <li><a href="services.html" data-i18n="service2.title">التصميم الإنشائي</a></li>
+            <li><a href="services.html" data-i18n="service3.title">الإشراف الهندسي</a></li>
+            <li><a href="services.html" data-i18n="service4.title">إدارة المشاريع</a></li>
+            <li><a href="services.html" data-i18n="service6.title">التصميم الداخلي</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title" data-i18n="footer.contact">تواصل معنا</h4>
+          <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg><span data-i18n="contact.address.value">المملكة العربية السعودية</span></div>
+          <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg><a href="tel:+966570524353" dir="ltr">+966 57 052 4353</a></div>
+          <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg><a href="mailto:info@orkaunited.com" dir="ltr">info@orkaunited.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div data-i18n="footer.copyright">© 2026 اوركا المتحدة. جميع الحقوق محفوظة.</div>
+        <div data-i18n="footer.designed">صُمم بـ ❤️ بواسطة المجال التقني</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/966570524353" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+  <button class="back-to-top" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg></button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
