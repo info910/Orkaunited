@@ -1,0 +1,20 @@
+# ORKA United - robots.txt
+# https://orkaunited.com
+
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+
+# Block access to config files
+Disallow: /.htaccess
+Disallow: /_redirects
+Disallow: /netlify.toml
+Disallow: /vercel.json
+Disallow: /README.md
+
+# Sitemap location
+Sitemap: https://orkaunited.com/sitemap.xml
+
+# Crawl delay (in seconds)
+Crawl-delay: 1

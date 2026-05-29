@@ -294,9 +294,12 @@ function initContactForm() {
 
 // ============ Active Nav Link ============
 function initActiveNav() {
-  const path = window.location.pathname.split('/').pop() || 'index.html';
+  // Normalize current path: "/about", "/about.html", "/about/", "" → "/about"
+  let path = window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '');
+  if (path === '' || path === '/index') path = '/';
   document.querySelectorAll('.nav-link').forEach((link) => {
-    const href = link.getAttribute('href');
+    let href = (link.getAttribute('href') || '').replace(/\.html$/, '').replace(/\/+$/, '');
+    if (href === '' || href === '/index') href = '/';
     if (href === path) link.classList.add('active');
   });
 }
