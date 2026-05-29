@@ -1631,10 +1631,9 @@ html[lang="en"] .hero::before {
   border: 1px solid var(--color-border);
 }
 
-/* ---- Dark mode: stats / footer / contact-info keep their dark identity ---- */
-.stats, .footer, .contact-info {
-  /* Always-dark surfaces - --color-primary is now permanently dark */
-}
+/* ---- Always-dark surfaces (stats / footer / contact-info) ----
+   These use --color-primary which is now permanently dark in both themes.
+   No explicit rule needed — kept here as documentation. */
 
 /* ---- v1.2 FIX: Partner logos — much bigger and clearer ---- */
 .partners-grid {
@@ -1663,13 +1662,15 @@ html[lang="en"] .hero::before {
   box-shadow: var(--shadow-lg);
   border-color: var(--color-accent-soft);
 }
+/* Dark mode: invert black logos to white so they sit on the dark card
+   at the SAME visual size as light mode (no shrinking white pill). */
 [data-theme="dark"] .partners-grid img {
-  background: #ffffff;
-  filter: grayscale(0%);
-  opacity: 0.92;
-  padding: 1.75rem 2rem;
+  background: var(--color-bg-alt);
+  filter: invert(1) grayscale(15%) brightness(1.1);
+  opacity: 0.85;
 }
 [data-theme="dark"] .partners-grid img:hover {
+  filter: invert(1) grayscale(0%) brightness(1.2);
   opacity: 1;
   box-shadow: 0 12px 32px rgba(201, 169, 97, 0.25);
   border-color: var(--color-accent);
